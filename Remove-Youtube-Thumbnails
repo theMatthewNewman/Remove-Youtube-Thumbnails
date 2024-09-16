@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name       no thumbnails
+@version    20240916.03.00
+@namespace  ?
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+/* Hides video thumbnails on the homepage, search, and sidebar */
+ytd-thumbnail,
+#thumbnail {
+    display: none !important;
+}
+
+/* Hides individual Shorts video items */
+ytd-rich-item-renderer:has(a[href*="/shorts/"]) {
+    display: none !important;
+}
+
+/* Hides video loading pictures */
+.ghost-grid {
+    display: none !important;
+}
+}
