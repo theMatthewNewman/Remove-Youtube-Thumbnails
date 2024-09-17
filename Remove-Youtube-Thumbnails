@@ -20,4 +20,9 @@ ytd-rich-item-renderer:has(a[href*="/shorts/"]) {
 .ghost-grid {
     display: none !important;
 }
+
+/* Hides ad thumbnails */
+div.ytd-display-ad-renderer {
+    display: none !important;
+}
 }
